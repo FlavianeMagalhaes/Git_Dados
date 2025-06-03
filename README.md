@@ -20,6 +20,14 @@ Scripts para execução segura de operações em massa no MongoDB, utilizando **
 - Faça testes em um ambiente de **homologação**, nunca direto em produção.
 - Scripts voltados para desenvolvedores e DBAs — utilize com conhecimento e responsabilidade.
 
+---
+
+## 📄 Licença
+Distribuído sob a Licença MIT. Veja o arquivo LICENSE para mais informações.
+
+## 👤 Autor
+- GitHub (FlavianeMagalhaes)
+- Linkedin(magalhaesfla)
 
 ## 📂 Arquivos
 
