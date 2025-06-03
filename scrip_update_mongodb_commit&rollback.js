@@ -3,7 +3,7 @@
  * Autor: Flaviane Magalhaes
  * GitHub: https://github.com/FlavianeMagalhaes
  * Data: 15/05/2025
- * Descrição: Executa uma exclusão segura em uma coleção MongoDB dentro de uma transação.
+ * Descrição: Executa uma atualização segura em uma coleção MongoDB dentro de uma transação.
  */
 const session = db.getMongo().startSession();
 
