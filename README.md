@@ -1,4 +1,4 @@
-# 🔄 MongoDB Bulk Scripts com Transação
+# 🔄 MongoDB Scripts de Transação Segura
 
 Scripts para execução segura de operações em massa no MongoDB, utilizando **transações** para garantir integridade e controle durante exclusões e atualizações. Ideal para rotinas administrativas e manutenção de dados em ambientes controlados.
 
