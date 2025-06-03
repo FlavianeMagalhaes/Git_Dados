@@ -13,6 +13,14 @@ Scripts para execução segura de operações em massa no MongoDB, utilizando **
 
 ---
 
+## ⚠️ Cuidados
+
+- **Altere os nomes fictícios de banco e coleção** no script antes de executar.
+- Use os scripts **somente com backup recente e em ambiente controlado**.
+- Faça testes em um ambiente de **homologação**, nunca direto em produção.
+- Scripts voltados para desenvolvedores e DBAs — utilize com conhecimento e responsabilidade.
+
+
 ## 📂 Arquivos
 
 - `delete_script.js`: script para excluir documentos com status `"DONE"` ou `"ERROR"`
