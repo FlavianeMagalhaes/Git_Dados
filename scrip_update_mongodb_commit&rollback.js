@@ -1,5 +1,5 @@
 /*
- * Script para excluir documentos com dois campos
+ * Script para atualizar campos no MongoDB
  * Autor: Flaviane Magalhaes
  * GitHub: https://github.com/FlavianeMagalhaes
  * Data: 15/05/2025
@@ -10,23 +10,23 @@ const session = db.getMongo().startSession();
 try {
   session.startTransaction();
 
-  const dbReal = db.getSiblingDB("SEUBANCO_MONGODB"); // banco real
-  const result = dbReal.COLECAOXYZ.updateMany(
-    { status: "COLECAOXYZ" }, // COLECAO ONDE ESTAO OS DADOS DO BANCO
-    { $set: { status: "ERROR" } }
+  const dbReal = db.getSiblingDB("SEUBANCO_MONGO_DB"); // banco real
+  const result = dbReal.SUA_COLECAO_XYZ.updateMany( // escreva aqui sua coleção 
+    { status: "QUEUE" }, // aqui você define o campo e o valor do campo a ser realizado update 
+    { $set: { status: "ERROR" } } // aqui define o valor a ser atualizado
   );
 
-  if (result && result.modifiedCount !== undefined) {
-    print(`Documentos atualizados para 'ERROR': ${result.modifiedCount}`);
-  } else {
+  if (result && result.modifiedCount !== undefined) { //retorna a quantidade a ser atualizada
+    print(`Documentos atualizados para 'ERROR': ${result.modifiedCount}`); //retorna a quantidade atualizada
+  } else {  //faz tratamento do script
     print("Nenhum documento foi atualizado ou houve um erro.");
   }
 
-  session.commitTransaction();
+  session.commitTransaction(); //confirma a transação
 
 } catch (error) {
   print(`Erro ocorrido: ${error.message || error}`);
-  session.abortTransaction();
+  session.abortTransaction(); // revoga a transação a tornando segura em caso de erro
 } finally {
   session.endSession();
 }
