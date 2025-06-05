@@ -1,6 +1,6 @@
-# 🔄 MongoDB Scripts de Transação Segura ( MongoDB Secure Transaction Scripts)
+#  MongoDB Scripts de Transação Segura ( MongoDB Secure Transaction Scripts)
 
-Scripts para execução segura de operações em massa no MongoDB, utilizando **transações** para garantir integridade e controle durante exclusões e atualizações. Ideal para rotinas administrativas e manutenção de dados em ambientes controlados.
+Scripts para execução segura de operações em massa no MongoDB, utilizando **transações** para garantir integridade e controle durante exclusões e atualizações. Ideal para rotinas administrativas e manutenção de dados em ambientes controlados.Esse escript foi utilizado tanto para MongoDB local quanto para banco de produção.
 
 ---
 
@@ -22,8 +22,6 @@ Scripts para execução segura de operações em massa no MongoDB, utilizando **
 
 ---
 
-## 📄 Licença
-Distribuído sob a Licença MIT. Veja o arquivo LICENSE para mais informações.
 
 ## 👤 Autor
 - GitHub (FlavianeMagalhaes)
@@ -33,7 +31,7 @@ Distribuído sob a Licença MIT. Veja o arquivo LICENSE para mais informações.
 
 - `delete_script.js`: script para excluir documentos com status `"DONE"` ou `"ERROR"`
 - `update_script.js`: script para atualizar documentos com base em critérios definidos
-
+- arquivo de imagem com os comandos shell
 ---
 
 ## 💻 Exemplo de uso (delete_script.js)
