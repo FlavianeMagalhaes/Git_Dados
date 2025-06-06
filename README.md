@@ -31,7 +31,7 @@ Scripts para execução segura de operações em massa no MongoDB, utilizando **
 
 - `delete_script.js`: script para excluir documentos com status `"DONE"` ou `"ERROR"`
 - `update_script.js`: script para atualizar documentos com base em critérios definidos
-- arquivo de imagem com os comandos shell
+
 ---
 
 ## 💻 Exemplo de uso (delete_script.js)
